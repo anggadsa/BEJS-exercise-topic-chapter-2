@@ -1,7 +1,7 @@
 function barisanBintang(){
     console.log(`1. barisanBintang()`)
-    let rows = 5
-    for(i=1; i <= rows; i++){
+    let num = 5
+    for(i=1; i <= num; i++){
         console.log("*")
     }
 
@@ -11,14 +11,14 @@ barisanBintang()
 
 function barisanBintagDua(){
     console.log(`2. barisanBintagDua()`)
-    let rows = 5
+    let num = 5
     let string = ""
 
-    for(i=1; i <= rows; i++){
-        for(j=1; j<= rows; j++){
+    for(i=1; i <= num; i++){
+        for(j=1; j<= num; j++){
             string += "*"
         }
-        if(i<rows){
+        if(i<num){
             string += "\n"
         }
     }
@@ -30,9 +30,9 @@ barisanBintagDua()
 
 function barisanTangga(){
     console.log(`3. barisanTangga()`)
-    let rows = 5
+    let num = 5
     let string = ""
-    for(i=1; i <= rows;  i++){
+    for(i=1; i <= num;  i++){
         console.log(string += "*")
     }
 }
@@ -41,13 +41,15 @@ barisanTangga()
 
 function barisanTanggaTerbalik(){
     console.log(`4. barisanTanggaTerbalik()`)
-    let rows = 5
+    let num = 5
     let string = ""
-    for(i=1; i <= rows;  i++){
-        for(j=0; j <= rows-i; j++){
+    for(i=1; i <= num;  i++){
+        for(j=0; j <= num-i; j++){
             string += "*"
         }
+        string += "\n"
     }
+    
     console.log(string);
 }
 
