@@ -11,8 +11,7 @@ function changeVocals(str) {
             vokal = str.charCodeAt(i) + 1
             change = String.fromCharCode(vokal) 
             string = string + change;
-        }
-        else {
+        } else {
             change = str.charAt(i);
             string = string + change;
         }
@@ -68,7 +67,7 @@ function setLowerUpperCase(str) {
 
 function removeSpaces(str) {
     // Your code here
-    let charCode = 0;
+    // let charCode = 0;
     let string = "";
     let change = "";
    
