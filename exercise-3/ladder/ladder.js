@@ -16,3 +16,4 @@ function ladder(word) {
   
 //   // DRIVER CODE
 console.log(ladder('4angrymen'));
+console.log(ladder('AnggaDsatria'));
