@@ -2,10 +2,11 @@
 const palindromeAngka = ()=>{
     
     let angka = 175;
-    for (i=0; i < 100; i--){
+    for (i=0; i < 10; i--){
+    
         arr = [];
-        
         arr = [...String(angka)];
+
         if(arr[0] === arr[arr.length-1]){
             return `${angka}`
         } else {

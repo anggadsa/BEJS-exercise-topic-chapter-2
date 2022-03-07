@@ -21,6 +21,7 @@ function barisanBintagDua(){
         if(i<num){
             string += "\n"
         }
+        
     }
     console.log(string)
 
@@ -35,6 +36,7 @@ function barisanTangga(){
     for(i=1; i <= num;  i++){
         console.log(string += "*")
     }
+    return string
 }
 
 barisanTangga()
