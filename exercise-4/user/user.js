@@ -1,11 +1,18 @@
 class User {
     constructor(obj){
-    this.name = obj.name;
-    this.email = obj.email;
-    this.passwordObj = obj.password;
-    this.password = this.#changePassBaru();
-    }
+        this.name = obj.name;
+        this.email = obj.email;
+        this.passwordObj = obj.password;
+        // let objectPass = obj.password
+        this.password = this.#changePassBaru();
 
+        return `User` + {
+            name: this.name,
+            email: this.email,
+            password: this.password,
+        }
+    }
+        
     #changePassBaru(){
        
         function changeVocals(str) {
@@ -106,7 +113,9 @@ class User {
             }
             
         }
-        let generate = this.passwordObj
+        // this.passwordObj = obj.password
+
+        let generate = this.passwordObj;
         return passwordGenerator(generate);
      
 
@@ -121,6 +130,7 @@ const user1 = new User({
     password: 'pass123',
 });
 
+// User.passwordObj()
 console.log(user1);
 // User { name: 'Hafid', email: 'hafid@mail.com', password: '321SSBP' }
 
