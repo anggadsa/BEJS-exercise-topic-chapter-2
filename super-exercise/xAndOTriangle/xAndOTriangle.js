@@ -1,6 +1,6 @@
 function xAndOTriangle(){
     let string = ""
-    let num = 3
+    let num = 6
 
     for(i=1; i<=num; i++){
 
