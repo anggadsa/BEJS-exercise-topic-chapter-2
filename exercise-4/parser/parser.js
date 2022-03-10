@@ -10,7 +10,7 @@ class Parser {
                 if(i === array.length-1 && j === array[i].length-1){
                     string += `${array[i][j].toString()}`
                 } else {
-                    string += `${array[i][j].toString()},`
+                    string += `${array[i][j].toString()}, `
                 }
             }
         }
