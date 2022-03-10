@@ -1,18 +1,11 @@
 class User {
+    #passwordObj;
     constructor(obj){
         this.name = obj.name;
         this.email = obj.email;
-        this.passwordObj = obj.password;
-        // let objectPass = obj.password
+        this.#passwordObj = obj.password;
         this.password = this.#changePassBaru();
-
-        return `User` + {
-            name: this.name,
-            email: this.email,
-            password: this.password,
-        }
     }
-        
     #changePassBaru(){
        
         function changeVocals(str) {
@@ -34,11 +27,7 @@ class User {
                     string = string + change;
                 }
             }
-        
             return string
-            
-            // return arr, str
-            
         }
         
         function reverseWord(str) {
@@ -79,13 +68,11 @@ class User {
                     string = string + change;
                 }
             }
-            // return string
             return reverseWord(string)
         }
 
         function removeSpaces(str) {
             // Your code here
-         
             let string = "";
             let change = "";
            
@@ -104,8 +91,6 @@ class User {
         }
         
         function passwordGenerator(name) {
-            //code di sini
-            // let name = this.passwordObj;
             if(name.length > 4){
                 return removeSpaces(name)
             } else {
@@ -113,10 +98,8 @@ class User {
             }
             
         }
-        // this.passwordObj = obj.password
-
-        let generate = this.passwordObj;
-        return passwordGenerator(generate);
+        let generate = this.#passwordObj;
+        return this.#passwordObj = passwordGenerator(generate);
      
 
     }
@@ -129,8 +112,6 @@ const user1 = new User({
     email: 'hafid@mail.com',
     password: 'pass123',
 });
-
-// User.passwordObj()
 console.log(user1);
 // User { name: 'Hafid', email: 'hafid@mail.com', password: '321SSBP' }
 
