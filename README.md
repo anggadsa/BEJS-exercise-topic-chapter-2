@@ -1,5 +1,4 @@
-# exercises-topic-chapter-2
-
+# My-Daily-Exercise
 
 
 ## Getting started
